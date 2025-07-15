@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- External CSS and fonts/icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="doodle-background">
+  <div class="boat">
+    <div class="boat-base"></div>
+    <div class="mast"></div>
+    <div class="sail"></div>
+  </div>
+  <div class="sea">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+  </div>
+</div>
+
+
+  <!-- Header with sticky nav -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="mountain.png" alt="Lakbay" />
+        <span class="logo-text">AV</span>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Angela Vier</h1>
+        <p>
+          I'm a fresh graduate in BS Information Technology who wants to improve
+          and focus on graphic designing.
+        </p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/angela.vier.2024/"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.instagram.com/gelayy.y/"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://discord.com/channels/@me"><i class="bx bxl-discord-alt"></i></a>
+        </div>
+        <a href="Angela Vier E. Doncillo CV.pdf" download="Angela_Vier_CV.pdf" class="btn">Download CV</a>
+      </div>
+      <div class="home-img">
+        <img src="images/home.png" alt="" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-img">
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>
+          "Hello, I'm Doncillo, Angela Vier E., an 18‑year‑old from UEP. I believe in
+          endless personal growth..."
+        </h3>
+        <p>This website is my personal blog showcasing my creative projects. 
+          I initially began editing jerseys just for fun, which later led me
+          to explore design work for an eSports community. I'm always eager to learn, 
+          grow, and adapt to new knowledge and experiences.
+        </p>
+        <br>
+        <p>You can click the discord below for more of my edits.</p>
+<div class="social-media discord-only">
+  <a href="https://discord.com/channels/1368238445725483220/1368238445725483223"><i class="bx bxl-discord-alt"></i></a>
+</div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+  <p class="projects-title page-title">My Projects</p>
+  <div class="library">
+
+    <div class="book"><img src="images/jersey1.png" alt="Caba" /></div>
+    <div class="book"><img src="images/jersey.png" alt="Busay" /></div>
+    <div class="book"><img src="images/AeroxeSports Design 1.png" alt="Biri" /></div>
+    <div class="book"><img src="images/recruitmentposter.png" alt="Spice" /></div>
+    <div class="book"><img src="images/Empress tryout poster design 2.png" alt="Rakit Dakit" /></div>
+    <!-- <div class="book"><img src="images/ecert.png" alt="Cabatuan" /></div> -->
+    <div class="book"><img src="images/MVP template.png" alt="Cabatuan" /></div>
+    <div class="book"><img src="images/Foodposter.png" alt="Pinipisakan" /></div>
+        <div class="book"><img src="images/food menu.png" alt="Palihon" /></div>
+
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="center-wrapper">
+      <!-- <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid iure delectus corrupti impedit...
+      </p> -->
+      <h3>Contact Me</h3>
+      <p>angelavier60@gmail.com<br />09464710703</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2025 | All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+      window.location.href = 'login.html';
+    });
+
+    // Optional: mobile menu toggle
+    const menuIcon = document.getElementById('menu-icon');
+    const nav = document.querySelector('.navbar');
+    menuIcon.addEventListener('click', () => nav.classList.toggle('active'));
+  </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
